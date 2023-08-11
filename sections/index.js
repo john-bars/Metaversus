@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import GetStarted from "./GetStarted";
 import Hero from "./Hero";
 import Insights from "./Insights";
-import Navbar from "./NavBar";
+import Navbar from "./Navbar";
 import WhatsNew from "./WhatsNew";
 import World from "./World";
 
