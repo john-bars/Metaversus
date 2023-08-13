@@ -1,11 +1,16 @@
 import Image from "next/image";
-import { Hero, Navbar } from "@/sections";
+import { About, Explore, Hero, Navbar } from "@/sections";
 
 const Home = () => {
   return (
-    <main className="p-6">
+    <main className="overflow-hidden">
       <Navbar />
       <Hero />
+      <div className="relative">
+        <About />
+        <div />
+        <Explore />
+      </div>
     </main>
   );
 };
