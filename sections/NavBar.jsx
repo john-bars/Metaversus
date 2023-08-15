@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { container, navVariants } from "@/utils/motion";
+import { navVariants } from "@/utils/motion";
 
 const Navbar = () => {
   return (
@@ -10,10 +10,10 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="relative py-2"
+      className="relative p-11"
     >
       <div className="absolute w-1/2 inset-0 gradient-01 " />
-      <div className="flex justify-between items-center my-4">
+      <div className="flex justify-between items-center">
         <Image
           src="/search.svg"
           alt="search"
