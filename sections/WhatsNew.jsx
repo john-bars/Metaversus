@@ -2,20 +2,40 @@
 
 import { NewFeature, TitleText, TypingText } from "@/components";
 import { newFeatures } from "@/constants";
+import { container, fadeIn, planetVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 
 const WhatsNew = () => {
   return (
     <section>
-      <motion.div>
-        <motion.div>
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: "false", amount: 0.25 }}
+        className="2xl:max-w-[1280px] w-full flex lg:flex-row flex-col gap-8 justify-center mx-auto"
+      >
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 1)}
+          className=" flex flex-[0.75] justify-center flex-col "
+        >
           <TypingText title="| What's New?" />
           <TitleText title={<>What's new about Metaversus </>} />
-          <div>
+          <div className="flex flex-wrap justify-between gap-6 mt-12">
             {newFeatures.map((feature) => (
               <NewFeature key={feature.title} {...feature} />
             ))}
           </div>
+        </motion.div>
+        <motion.div
+          variants={planetVariants("right")}
+          className="flex justify-center items-center lg:w-1/2"
+        >
+          <img
+            src="/whats-new.png"
+            alt="what's new"
+            className="object-contain w-[90%] h-[90%]"
+          />
         </motion.div>
       </motion.div>
     </section>
