@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { About, Explore, Hero, Navbar } from "@/sections";
+import { About, Explore, GetStarted, Hero, Navbar } from "@/sections";
 
 const Home = () => {
   return (
@@ -8,8 +8,11 @@ const Home = () => {
       <Hero />
       <div className="relative">
         <About />
-        <div />
+        <div className="gradient-03 z-0" />
         <Explore />
+      </div>
+      <div>
+        <GetStarted />
       </div>
     </main>
   );
