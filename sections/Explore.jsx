@@ -13,6 +13,9 @@ const Explore = () => {
     <section className="sm:p-16 xs:p-8 px-6 py-12" id="explore">
       <motion.div
         variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
         className="flex flex-col mx-auto 2xl:max-w-[1280px] w-full"
       >
         <TypingText title="| The World" textStyles="text-center" />
