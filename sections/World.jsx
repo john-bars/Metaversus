@@ -9,7 +9,13 @@ import { TypingText, TitleText } from "@/components";
 const World = () => {
   return (
     <section className="relative z-10 sm:p-16 xs:p-8 px-6 py-12">
-      <motion.div className="flex flex-col mx-auto 2xl:max-w-[1280px] w-full">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: "false", amount: 0.25 }}
+        className="flex flex-col mx-auto 2xl:max-w-[1280px] w-full"
+      >
         <TypingText title="| People of the World" textStyles="text-center" />
         <TitleText
           title={
@@ -21,7 +27,10 @@ const World = () => {
           textStyles="text-center"
         />
 
-        <motion.div className="relative mt-[68px] flex w-full h-[40vw] ">
+        <motion.div
+          variants={fadeIn("up", "tween", 0.4, 1)}
+          className="relative mt-[68px] flex w-full h-[40vw] "
+        >
           <Image src="/map.png" alt="map" fill />
           <img
             src="/people-01.png"
