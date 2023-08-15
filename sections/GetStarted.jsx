@@ -2,7 +2,7 @@
 
 import { StartSteps, TitleText, TypingText } from "@/components";
 import { startingFeatures } from "@/constants";
-import { container, fadeIn } from "@/utils/motion";
+import { container, fadeIn, planetVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 
 const GetStarted = () => {
@@ -15,7 +15,10 @@ const GetStarted = () => {
         viewport={{ once: "false", amount: 0.25 }}
         className="2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8 justify-center "
       >
-        <motion.div className="flex justify-center items-center lg:w-1/2 ">
+        <motion.div
+          variants={planetVariants("left")}
+          className="flex justify-center items-center lg:w-1/2 "
+        >
           <img
             src="/get-started.png"
             alt="get-started"
