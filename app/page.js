@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { About, Explore, GetStarted, Hero, Navbar } from "@/sections";
+import { About, Explore, GetStarted, Hero, Navbar, WhatsNew } from "@/sections";
 
 const Home = () => {
   return (
@@ -13,6 +13,8 @@ const Home = () => {
       </div>
       <div>
         <GetStarted />
+        <div className="gradient-04 z-0 " />
+        <WhatsNew />
       </div>
     </main>
   );
