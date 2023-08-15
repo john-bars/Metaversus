@@ -8,8 +8,8 @@ import { TypingText, TitleText } from "@/components";
 
 const World = () => {
   return (
-    <section>
-      <motion.div>
+    <section className="relative z-10 sm:p-16 xs:p-8 px-6 py-12">
+      <motion.div className="flex flex-col mx-auto 2xl:max-w-[1280px] w-full">
         <TypingText title="| People of the World" textStyles="text-center" />
         <TitleText
           title={
