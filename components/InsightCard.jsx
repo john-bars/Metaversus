@@ -5,7 +5,10 @@ import { fadeIn } from "@/utils/motion";
 
 const InsightCard = ({ imgUrl, title, subtitle, index }) => {
   return (
-    <motion.div className="flex flex-col md:flex-row gap-4">
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 1)}
+      className="flex flex-col md:flex-row gap-4"
+    >
       <img
         src={imgUrl}
         alt="planet-01"
