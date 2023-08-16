@@ -94,6 +94,23 @@ export const fadeIn = (direction, type, delay, duration) => ({
   },
 });
 
+export const zoomIn = (delay, duration) => ({
+  hidden: {
+    scale: 0,
+    opacity: 0,
+  },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      delay,
+      duration,
+      ease: "easeOut",
+    },
+  },
+});
+
 export const planetVariants = (direction) => ({
   hidden: {
     x: direction === "left" ? "-100%" : "100%",
