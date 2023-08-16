@@ -27,9 +27,9 @@ const Home = () => {
         <WhatsNew />
       </div>
       <World />
-      <div>
+      <div className="relative">
         <Insights />
-        <div />
+        <div className="gradient-04 z-0 " />
         <Feedback />
       </div>
     </main>
