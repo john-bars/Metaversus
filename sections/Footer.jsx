@@ -1,11 +1,17 @@
 "use client";
 
 import { socials } from "@/constants";
+import { footerVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <motion.footer className="relative py-8 sm:p-16 xs:p-8 px-6">
+    <motion.footer
+      variants={footerVariants}
+      initial="hidden"
+      whileInView="show"
+      className="relative py-8 sm:p-16 xs:p-8 px-6"
+    >
       <div className="footer-gradient" />
       <div className="flex flex-col gap-8 mx-auto 2xl:max-w-[1280px] w-full">
         <div className="flex justify-between items-center flex-wrap gap-5">
