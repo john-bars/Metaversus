@@ -2,8 +2,10 @@ import Image from "next/image";
 import {
   About,
   Explore,
+  Feedback,
   GetStarted,
   Hero,
+  Insights,
   Navbar,
   WhatsNew,
   World,
@@ -25,6 +27,11 @@ const Home = () => {
         <WhatsNew />
       </div>
       <World />
+      <div>
+        <Insights />
+        <div />
+        <Feedback />
+      </div>
     </main>
   );
 };
