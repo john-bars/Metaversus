@@ -13,7 +13,11 @@ const Insights = () => {
         <TitleText title={""} textStyles={""} />
         <div>
           {insights.map((insight, index) => (
-            <InsightCard />
+            <InsightCard
+              key={`insight-${index}`}
+              {...insight}
+              index={index + 1}
+            />
           ))}
         </div>
       </motion.div>
