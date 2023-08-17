@@ -13,12 +13,12 @@ const About = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="2xl:max-w-[1280px] w-full mx-auto flex flex-col justify-center items-center"
+        className="2xl:max-w-[1280px] w-full mx-auto flex flex-col justify-center items-center px-4"
       >
         <TypingText title="| About Metaversus" textStyles="text-center" />
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="mt-2 font-normal sm:text-[32px] text-xl text-center text-slate-100 sm:px-2 leading-9"
+          className="mt-4 md:p-[50px] font-normal sm:text-[32px] text-xl text-center text-slate-100 sm:px-2 leading-8 md:leading-10"
         >
           <span className="font-extrabold text-slate-100">Metaverse</span> is a
           new thing in the future, where you can enjoy the virtual world by
