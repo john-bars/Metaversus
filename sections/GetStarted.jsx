@@ -28,11 +28,13 @@ const GetStarted = () => {
 
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          className="flex-[0.75] flex justify-center flex-col "
+          className="flex-[0.75] flex justify-center flex-col items-center px-8"
         >
-          <TypingText title="| How Metaversus Works" />
-          <TitleText title={<>Get started with just a few clicks.</>} />
-          <div className="flex flex-col max-w-[370px] gap-6 mt-8">
+          <div className="flex flex-col justify-center items-start">
+            <TypingText title="| How Metaversus Works" />
+            <TitleText title={<>Get started with just a few clicks.</>} />
+          </div>
+          <div className="flex flex-col max-w-[450px] lg:max-w-[370px] gap-2 lg:gap-6 mt-9">
             {startingFeatures.map((feature, index) => (
               <StartSteps key={feature} number={index + 1} text={feature} />
             ))}
