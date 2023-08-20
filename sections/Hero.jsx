@@ -32,20 +32,20 @@ const Hero = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="relative w-full md:-mt-5 -mt-3 -top-4 md:-top-8 pl-[10vw]"
+          className="relative w-full md:-mt-5 -mt-3 -top-4 md:-top-8 pl-[10vw]  h-[250px] sm:h-[350px] md:h-[500px]"
         >
-          <div className="absolute w-full h-[260px] -top-5 sm:h-[370px] sm:-top-5 md:h-[530px] md:-top-8 hero-gradient rounded-tl-[140px]  z-0 " />
+          <div className="absolute w-[100%] h-[260px] -top-5 sm:h-[370px] sm:-top-5 md:h-[530px] md:-top-8 hero-gradient rounded-tl-[20vw] lg:rounded-tl-[15vw] rounded-bl-[40px] lg:rounded-bl-[50px]  z-0 " />
           <Image
             src="/cover.png"
             alt="cover"
             width={500}
             height={350}
-            className="w-full h-[250px] sm:h-[350px] md:h-[500px] object-cover rounded-tl-[140px] z-10 relative "
+            className="absolute w-full h-[250px] sm:h-[350px] md:h-[500px] object-cover rounded-tl-[20vw] lg:rounded-tl-[15vw] rounded-bl-[40px] lg:rounded-bl-[50px] z-10 mr-0 "
           />
 
           <a
             href="#explore"
-            className="flex justify-end  sm:-mt-[60px] md:-mt-[70px] -mt-[50px] pr-15vw"
+            className="absolute flex justify-end sm:-mt-[60px] md:-mt-[70px] -mt-[50px] right-[15vw] top-[250px] sm:top-[350px] md:top-[500px]"
           >
             <Image
               src="/stamp.png"
